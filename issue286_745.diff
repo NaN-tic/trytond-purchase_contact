@@ -955,13 +955,13 @@ new file mode 100644
 +
 +        <record model="ir.ui.view" id="purchase_view_form">
 +            <field name="model">purchase.purchase</field>
-+            <field name="type">form</field>
++            <field name="type" eval="None"/>
 +            <field name="inherit" ref="purchase.purchase_view_form"/>
 +            <field name="name">purchase_form</field>
 +        </record>
 +        <record model="ir.ui.view" id="purchase_view_tree">
 +            <field name="model">purchase.purchase</field>
-+            <field name="type">tree</field>
++            <field name="type" eval="None"/>
 +            <field name="inherit" ref="purchase.purchase_view_tree"/>
 +            <field name="name">purchase_tree</field>
 +        </record>
