@@ -30,8 +30,8 @@ class Purchase(ContactMixin):
     __name__ = 'purchase.purchase'
     _contact_config_name = 'purchase.configuration'
 
-    def _get_invoice_purchase(self, invoice_type):
-        invoice = super(Purchase, self)._get_invoice_purchase(invoice_type)
+    def _get_invoice_purchase(self):
+        invoice = super(Purchase, self)._get_invoice_purchase()
         if self.contact:
             invoice.contact = self.contact
         return invoice
